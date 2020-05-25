@@ -1,0 +1,5 @@
+export const FETCH_NOTE_LIST = 'FETCH_NOTE_LIST'
+export const SIGN_IN = 'SIGN_IN'
+export const SIGN_UP = 'SIGN_UP'
+export const AUTO_LOGIN = 'AUTO_LOGIN'
+export const LOG_OUT = 'LOG_OUT'
