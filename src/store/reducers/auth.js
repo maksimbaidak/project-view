@@ -17,7 +17,6 @@ export default function authReducer(state = initialState, action){
         isLogin: action.isLogin
       }
     case SIGN_IN:
-    console.log(action.token)
       return {
         ...state,
         isLogin: action.isLogin,

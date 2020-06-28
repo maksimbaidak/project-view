@@ -1,0 +1,16 @@
+.masonry{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: stretch;
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+	flex-grow: 1;
+}

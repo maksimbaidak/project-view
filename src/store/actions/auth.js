@@ -23,8 +23,6 @@ export const signIn = (nick, pass) => async dispatch => {
     data: JSON.stringify(user)
   }).then(response => {
     let data = response.data.jwt;
-    console.log('ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo')
-    console.log(data);
     localStorage.setItem('jwt', data);
     localStorage.setItem('isLogin', '1');
     return dispatch ({

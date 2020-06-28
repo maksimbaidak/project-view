@@ -1,0 +1,17 @@
+@media only screen and (min-width: 450px) {
+  button {
+      width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  button {
+      width: 15%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  button {
+      width: 10%;
+  }
+}

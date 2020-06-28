@@ -1,0 +1,29 @@
+@media only screen and (min-width: 450px) {
+	.input {
+    width: 100%;
+    text-align: center;
+	}
+  input {
+    width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+  .input {
+    width: 100%;
+    text-align: center;
+	}
+  input {
+    width: 30%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+  .input {
+    width: 100%;
+    text-align: center;
+	}
+  input {
+    width: 20%;
+	}
+}

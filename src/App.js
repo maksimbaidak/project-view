@@ -1,11 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component} from 'react'
 import {Switch, Route, Redirect, withRouter} from 'react-router';
 import {connect} from 'react-redux'
 import {autoLogin} from './store/actions/auth';
-import Home from './pages/Home';
-import Signin from './pages/Signin';
-import Signup from './pages/Signup';
+import Layout from './pages/Layout'
+import Home from './pages/home/Home';
+import Signin from './pages/signin/Signin';
+import Signup from './pages/signup/Signup';
 
 class App extends Component {
 
@@ -31,7 +31,10 @@ class App extends Component {
         </Switch>
       )
     }
-    return(routes)
+    return(
+      <Layout>
+        { routes }
+      </Layout>)
   }
 }
 

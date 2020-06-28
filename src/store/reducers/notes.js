@@ -1,4 +1,5 @@
 import {FETCH_NOTE_LIST} from '../actions/actionTypes'
+import {SAVE_NOTE} from '../actions/actionTypes';
 
 const initialState = {
   notes: [{
@@ -14,6 +15,12 @@ export default function noteListReducer(state = initialState, action){
         ...state,
         notes: action.notes
       }
+      case SAVE_NOTE:
+        return {
+          ...state,
+          isOpen: action.isOpen,
+          note: action.note
+        }
     default:
       return state
   }
